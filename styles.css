@@ -1,0 +1,74 @@
+body { 
+  background: rgb(156,207,231);
+background: linear-gradient(0deg, rgba(156,207,231,1) 0%, rgba(245,169,203,1) 50%, rgba(151,127,215,1) 100%);
+min-height: 100vh;
+
+}
+h1 {
+  text-align: center;
+  font-size: 80px; 
+  color: #f9f6f6;
+  font-family: Madami One, cursive; 
+  text-decoration: underline;
+}
+h2 {
+  text-align: center;
+  font-size: 40px; 
+  color: #f9f6f6;
+  font-family: Madami One, cursive;
+}
+  h2::before {
+    content: url('sleepycat.jpg'); 
+    margin-right: 20px; /* Space between the icon and the text */
+  }
+  
+  h2::after {
+    content: url('catcat.jpg'); 
+    margin-left: 20px; /* Space between the icon and the text */
+  }
+
+
+#factButton {
+    background: url('catface.jpg') no-repeat; 
+    background-size: cover; 
+  
+    padding: 100px 200px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0;
+    margin: 4px 2px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 50%; 
+    transition-duration: 0.4s;
+    letter-spacing: 2px;
+  
+  }
+  #factButton:hover {
+    filter: brightness(0.8);
+    scale: 1.1;
+}
+#factDisplay {
+  max-width: 400px;
+
+  text-align: center;
+  font-size: 20px;
+  color: #f9f6f6;
+  font-family: Madami One, cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
