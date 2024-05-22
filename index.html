@@ -2,7 +2,11 @@
 <html>
 <head>
     <title>Random cat facts</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta property="og:title" content="Random cat facts" />
+    <meta property="og:description" content="Click the cat to get a random cat fact!" />
+    <meta property="og:image" content="https://petgus.github.io/sillycat.jpg" />
+    <meta property="og:url" content="https://petgus.github.io/" />
 </head>
 <body>
   <h1>Cat facts</h1>
@@ -10,19 +14,21 @@
  <!-- <link href="https://fonts.google.com/specimen/Madimi+One?preview.text=Cat%20Facts&preview.size=70&query=Mirko+Velimirovi%C4%87" rel="stylesheet"> -->
  <div class="container">
   <div class="box">
-  <button id="factButton"></button>
-  
+    <button id="factButton"></button>
+    
   </div>
    <div class="box" id="loading-spinner">
     <img src="spinning-cat.gif" height="150" width="200" alt="A cat spinning around" >
   </div>
-  </div>
+
   <div class="box" >
  
     <p id="factDisplay"></p>
 
  </div>
+  </div>
+
 
 <script src="script.js"></script>
 </body>
-</html>                   
+</html>
