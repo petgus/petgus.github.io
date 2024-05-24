@@ -13,6 +13,7 @@ function getCatFactsFromAPI() {
 
   loadingSpinner.style.display = "block"; // Show the loading spinner
   factDisplay.style.display = "none"; // Hide the fact display
+  document.getElementById('factDisplay').scrollIntoView({ behavior: 'smooth' });
 
   // wait for 1 second before fetching the data
   setTimeout(function () {
@@ -29,6 +30,10 @@ function getCatFactsFromAPI() {
         factDisplay.innerText = data.fact;
 
         factButton.disabled = false; // Enable the button again
+
+        document.getElementById('factButton').addEventListener('click', function() {
+      
+        });
     });
 
 
