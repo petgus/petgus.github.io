@@ -9,7 +9,6 @@ h1 {
   text-align: center;
   font-size: 80px; 
   color: #f9f6f6;
-  text-decoration: underline;
 }
 h2 {
   text-align: center;
@@ -19,45 +18,8 @@ h2 {
   flex-direction: row;
 }
 
-h2::before {
-  content: "";
-  background-image: url('sleepycat.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 80px; 
-  display: inline-block;
-  margin-right: 50px; 
-}
-  
-  h2::after {
-    content: ""; 
-    background-image: url('catcat.jpg');
-    background-size: cover; /* Resize the background image to cover the entire content area */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    width: 80px; /* Width of the image */
-    height: 80px; /* Height of the image */
-    display: inline-block; /* Make it appear inline with the text */
-    margin-right: 20px; /* Space between the icon and the text */
-  }
 
-@media screen and (max-width: 600px) {
-  h2 {
-    font-size: 30px;
-    flex-direction: column;
-  }
-  h2::before {
-    content: none;
-  }
-  h2::after {
-    content: none;
-  }
-  #factButton {
-    width: 20px; /* Adjust as needed */
-    height: 10px; /* Adjust as needed */
-    padding: 10px 20px; /* Adjust as needed */
-  }
-}
+
 #factButton {
     background: url('catface.jpg') no-repeat; 
     background-size: cover; 
@@ -81,6 +43,20 @@ h2::before {
     scale: 1.1;
 }
 
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 30px;
+    flex-direction: column;
+  }
+ 
+  #factButton {
+    width: 20px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+    padding: 80px 130px; /* Adjust as needed */
+  }
+}
+
 #factDisplay {
   max-width: 400px;
   text-align: center;
@@ -89,7 +65,7 @@ h2::before {
 
 @media screen and (max-width: 800px) {
   #factDisplay {
-    font-size: 36px;
+    font-size: 28px;
     max-width: unset;
   }
 }
@@ -109,11 +85,19 @@ h2::before {
 }
 
 .header-container {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (max-width: 800px) {
   .header-container {
-  
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .hide-mobile {
+    display: none;
   }
 } 
