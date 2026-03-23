@@ -1,3 +1,8 @@
+.header-row {
+  display: flex;
+  align-items: center;
+}
+
 .coming-soon-regular {
   font-family: "Coming Soon", cursive;
   font-weight: 400;
