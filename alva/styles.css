@@ -4,7 +4,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 0;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem;
 }
 
 .header-row {
@@ -52,6 +52,9 @@ p {
 }
 
 .leaf-label {
+  font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  font-style: normal;
   margin: 0.25rem 0 0;
 }
 
