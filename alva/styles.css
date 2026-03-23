@@ -33,6 +33,20 @@ p {
   margin: 0.5rem 0;
 }
 
+.leafs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 100px));
+  gap: 1rem;
+}
+
 .leaf {
-  height: 200px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .leafs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
