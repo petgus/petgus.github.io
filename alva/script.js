@@ -9,8 +9,8 @@ function pressNo() {
   if (activeQuestionIndex < questions.length) {
     showQuestion(activeQuestionIndex);
   } else {
-    document.getElementById("question").innerText =
-      "Sorry, we don't know what's wrong with your plant. Try asking a plant expert!";
+    document.getElementById("question").innerHTML =
+      "(╥﹏╥) Sorry, we don't know what's wrong with your plant<br> Try asking a plant expert!";
     document.getElementById("cause").innerText = "";
     document.getElementById("yes-button").style.display = "none";
     document.getElementById("no-button").style.display = "none";

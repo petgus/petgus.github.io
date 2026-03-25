@@ -1,20 +1,20 @@
+<!doctype html>
 <html lang="en">
   <head>
+    <script src="script.js" defer></script>
     <title>Holey Leafs</title>
-    <link rel="stylesheet" href="styles.css" />
     <script>
-      // Våran array (byrå med olika lådor) som innehåller frågor och orsak till sjuk planta.
 
       const questions = [
         {
           question: " Do you have any pets?",
           cause:
-            "your pets might be nibbling on your plant<br>you shall move your plant to a pet-free zone",
+            "Your pets might be nibbling on your plant.<br>You should move your plant to a pet-free zone",
         },
         {
           question: "Can you see any insects on the leafs?",
           cause:
-            "you have pest damage<br>you shall use insecticidal soap to get rid of the pests",
+            "You have pest damage.<br>You should use insecticidal soap to get rid of the pests",
         },
       ];
 
@@ -31,7 +31,7 @@
 
       // Visa orsaken om man svart "YES"
       //questions[0].cause
-    </script>
+        </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,9 +41,8 @@
 
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <a href="index.html" class="back-arrow">&larr; Back</a>
-    <h1></h1>
+  <body>    
+    <a href="index.html" class="back-arrow">&larr; Back</a>   
     <h1 class="coming-soon-regular">Plant Medkit</h1>
     <img
       class="header-image"
@@ -52,6 +51,19 @@
       height="200"
       alt="plant man"
     />
-    <h1 class="coming-soon-regular">Holey Leafs</h1>
+    <h1 class="coming-soon-regular">Holey leafs</h1>
+    <div class="assesments">
+      <div class="assesment-item">
+        <h2 id="question">Assessment</h2>    
+        <div>
+          <button type="button" class="yes-btn" id="yes-button" onclick="pressYes()">Yes</button>
+          <button type="button" class="no-btn" id="no-button" onclick="pressNo()">No</button>
+        </div>
+        <p id="cause"></p>
+      </div>      
+      </div>
+    </div>
   </body>
 </html>
+
+    
