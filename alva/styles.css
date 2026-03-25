@@ -5,6 +5,17 @@ body {
   text-align: center;
   margin: 0;
   padding: 6rem 2rem 2rem;
+  font-family: "Coming Soon", cursive;
+  background: radial-gradient(
+    ellipse at 50% 60%,
+    white 0%,
+    white 35%,
+    #f0f8f0 45%,
+    #e8f5e8 55%,
+    #dceddc 70%,
+    #c8e6c9 85%,
+    #b8d8b8 100%
+  );
 }
 
 .header-row {
@@ -48,7 +59,18 @@ p {
 .leaf-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.assesments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .assesments {
+    grid-template-columns: 1fr;
+  }
 }
 
 .leaf-label {
@@ -56,6 +78,11 @@ p {
   font-weight: 400;
   font-style: normal;
   margin: 0.25rem 0 0;
+}
+
+.leaf-item a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 600px) {
