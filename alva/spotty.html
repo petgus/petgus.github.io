@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="script.js" defer></script>
+    <title>Spotty Leafs</title>
     <script>
-        // Våran array (byrå med olika lådor) som innehåller frågor och orsak till sjuk planta.
-
       const questions = [
         {
           question: "  Are the spots dark brown?",
@@ -18,20 +18,6 @@
           cause: "you have hard-water damage<br>you shall use filtered water",
         },
       ];
-
-      // En funkton för att visa en fråga från en låda (vår array)
-      function showQuestion(index) {
-        return questions[index].question;
-      }
-
-      // Anropa funktionen som kan visa en fråga
-      showQuestion(0);
-
-      // Visa frågan som ligger i första lådan i vår array
-      //questions[0].question
-
-      // Visa orsaken om man svart "YES"
-      //questions[0].cause
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,7 +29,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>    
-    
+    <a href="index.html" class="back-arrow">&larr; Back</a>   
     <h1 class="coming-soon-regular">Plant Medkit</h1>
     <img
       class="header-image"
@@ -52,36 +38,16 @@
       height="200"
       alt="plant man"
     />
-  </div>
     <h1 class="coming-soon-regular">Spotty leafs</h1>
     <div class="assesments">
       <div class="assesment-item">
-        <h2>Assessment</h2>
-      
+        <h2 id="question">Assessment</h2>    
         <div>
-          <button type="button">Yes</button>
-          <button type="button">No</button>
+          <button type="button" id="yes-button" onclick="pressYes()">Yes</button>
+          <button type="button" id="no-button" onclick="pressNo()">No</button>
         </div>
-      </div>
-      <div class="assesment-item">
-        <h2>Assessment</h2>
-     
-        <div>
-          <button type="button">Yes</button>
-          <button type="button">No</button>
-        </div>
-      </div>
-      <div class="assesment-item">
-        <h2>Assessment</h2>
-        
-        <div>
-          <button type="button">Yes</button>
-          <button type="button">No</button>
-        </div>
-      </div>
-
-
-       
+        <p id="cause"></p>
+      </div>      
       </div>
     </div>
   </body>

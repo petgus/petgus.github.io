@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <title>Holey Leafs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // Våran array (byrå med olika lådor) som innehåller frågor och orsak till sjuk planta.
+
+      const questions = [
+        {
+          question: " Do you have any pets?",
+          cause:
+            "your pets might be nibbling on your plant<br>you shall move your plant to a pet-free zone",
+        },
+        {
+          question: "Can you see any insects on the leafs?",
+          cause:
+            "you have pest damage<br>you shall use insecticidal soap to get rid of the pests",
+        },
+      ];
+
+      // En funkton för att visa en fråga från en låda (vår array)
+      function showQuestion(index) {
+        return questions[index].question;
+      }
+
+      // Anropa funktionen som kan visa en fråga
+      showQuestion(0);
+
+      // Visa frågan som ligger i första lådan i vår array
+      //questions[0].question
+
+      // Visa orsaken om man svart "YES"
+      //questions[0].cause
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="index.html" class="back-arrow">&larr; Back</a>
+    <h1></h1>
+    <h1 class="coming-soon-regular">Plant Medkit</h1>
+    <img
+      class="header-image"
+      src="images/plant-man.png"
+      width="95"
+      height="200"
+      alt="plant man"
+    />
+    <h1 class="coming-soon-regular">Holey Leafs</h1>
+  </body>
+</html>

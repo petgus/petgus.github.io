@@ -1,26 +1,31 @@
-// Våran array (byrå med olika lådor) som innehåller frågor och orsak till sjuk planta.
-
-const questions = [
-  {
-    question: "Do you have spotty leaf?",
-    cause: "You have overwatered the plant",
-  },
-  {
-    question: "Do you have brown leaf?",
-    cause: "You have underwatered the plant",
-  },
-];
-
-// En funkton för att visa en fråga från en låda (vår array)
 function showQuestion(index) {
-  return questions[index].question;
+  const theQuestion = questions[index].question;
+  document.getElementById("question").innerText = theQuestion;
 }
 
-// Anropa funktionen som kan visa en fråga
-showQuestion(0);
+function pressNo() {
+  activeQuestionIndex = activeQuestionIndex + 1;
 
-// Visa frågan som ligger i första lådan i vår array
-//questions[0].question
+  if (activeQuestionIndex < questions.length) {
+    showQuestion(activeQuestionIndex);
+  } else {
+    document.getElementById("question").innerText =
+      "Sorry, we don't know what's wrong with your plant. Try asking a plant expert!";
+    document.getElementById("cause").innerText = "";
+    document.getElementById("yes-button").style.display = "none";
+    document.getElementById("no-button").style.display = "none";
+  }
+}
 
-// Visa orsaken om man svart "YES"
-//questions[0].cause
+function pressYes() {
+  const theCause = questions[activeQuestionIndex].cause;
+  document.getElementById("cause").innerHTML = theCause;
+  document.getElementById("yes-button").style.display = "none";
+  document.getElementById("no-button").style.display = "none";
+}
+
+let activeQuestionIndex = 0;
+
+window.onload = function () {
+  showQuestion(activeQuestionIndex);
+};
