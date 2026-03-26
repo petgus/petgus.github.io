@@ -26,7 +26,21 @@ body {
   gap: 1rem;
   font-size: 2.9rem;
   margin-bottom: -7rem;
-  /* text-shadow: rgba(124, 176, 123, 0.9) 0px 0px 18px; */
+}
+
+.monstera {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+  width: 20vw;
+}
+
+.hanging-pothos {
+  width: 15vw;
+
+  position: absolute;
+  top: -4px;
+  left: 0;
 }
 
 .header-image {
@@ -93,6 +107,9 @@ p {
   .leafs {
     grid-template-columns: repeat(2, 1fr);
   }
+  .leaf {
+    width: 50%;
+  }
 }
 
 /* Styles for mobile */
@@ -112,6 +129,9 @@ p {
     height: 150px;
     position: relative;
     top: -20px;
+  }
+  .monstera {
+    display: none;
   }
 }
 
