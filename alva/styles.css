@@ -21,21 +21,12 @@ body {
 
 .header-row {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   font-size: 2.9rem;
   margin-bottom: -7rem;
   /* text-shadow: rgba(124, 176, 123, 0.9) 0px 0px 18px; */
-}
-
-.vine {
-  width: 100%;
-  height: 8px;
-  background: linear-gradient(to right, #4CAF50, #81C784, #4CAF50);
-  border-radius: 4px;
-  margin-bottom: 10px;
 }
 
 .header-image {
@@ -122,6 +113,12 @@ p {
     position: relative;
     top: -20px;
   }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 .yes-btn {
